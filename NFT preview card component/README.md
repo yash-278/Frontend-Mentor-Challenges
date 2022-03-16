@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/yash-278/Frontend-Mentor-Challenges/tree/main/NFT%20preview%20card%20component)
+- Live Site URL: [Live Demo](https://yash-278.github.io/Frontend-Mentor-Challenges/NFT%20preview%20card%20component/index.html)
 
 ## My process
 
@@ -43,9 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Adding Image Overlay
 
 ```html
 <div class="imgContainer">
