@@ -13,8 +13,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
@@ -32,8 +30,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Built with
 
 - Semantic HTML5 markup
-- CSS 5
-- CSS custom properties
+- CSS3
 - Mobile-first workflow
 
 ### What I learned

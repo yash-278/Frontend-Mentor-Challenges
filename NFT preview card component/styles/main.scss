@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+
+hr {
+  border: none;
+  border-top: 1px solid hsl(0, 0%, 33%);
+  margin: 1em 0;
+}
+
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.cardContainer {
+  position: relative;
+  max-width: 250px;
+  margin: auto;
+  padding: 1.2em;
+  border-radius: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, 0.25);
+  .imgContainer {
+    padding: 0;
+    position: relative;
+    .etherImg {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .overlay {
+      opacity: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: hsla(178, 100%, 50%, 0.5);
+      border-radius: 10px;
+      transition: ease-in-out;
+      transition-duration: 200ms;
+      cursor: pointer;
+      .viewIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+  }
+
+  .cardContent {
+    h1 {
+      color: hsl(0, 0%, 100%);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      font-size: 1.1rem;
+      transition: ease-in-out;
+      transition-duration: 300ms;
+      cursor: pointer;
+      &:hover {
+        color: hsl(178, 100%, 50%);
+      }
+    }
+
+    p {
+      font-weight: 300;
+      color: hsl(215, 51%, 70%);
+      font-size: 0.9rem;
+    }
+
+    .timeValue {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 400;
+
+      .iconText {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .value {
+        color: hsl(178, 100%, 50%);
+        margin-left: 0.5em;
+      }
+      .time {
+        color: hsl(215, 51%, 70%);
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  .cardCreator {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-size: 0.8rem;
+    font-weight: 300;
+    .avatar {
+      width: 25px;
+      border: 1px solid white;
+      border-radius: 100px;
+      margin-right: 1em;
+    }
+
+    .author {
+      transition: ease-in-out;
+      transition-duration: 300ms;
+      cursor: pointer;
+      color: hsl(0, 0%, 100%);
+      &:hover {
+        color: hsl(178, 100%, 50%);
+      }
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Outfit";
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #545454;
+  margin: 1em 0;
+}
+
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0d192b;
+}
+
+.cardContainer {
+  position: relative;
+  max-width: 250px;
+  margin: auto;
+  padding: 1.2em;
+  border-radius: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #14253d;
+  -webkit-box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, 0.25);
+}
+
+.cardContainer .imgContainer {
+  padding: 0;
+  position: relative;
+}
+
+.cardContainer .imgContainer .etherImg {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cardContainer .imgContainer .overlay {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  border-radius: 10px;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.cardContainer .imgContainer .overlay .viewIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cardContainer .imgContainer:hover .overlay {
+  opacity: 1;
+}
+
+.cardContainer .cardContent h1 {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.cardContainer .cardContent h1:hover {
+  color: #00fff7;
+}
+
+.cardContainer .cardContent p {
+  font-weight: 300;
+  color: #8bacda;
+  font-size: 0.9rem;
+}
+
+.cardContainer .cardContent .timeValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.cardContainer .cardContent .timeValue .iconText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardContainer .cardContent .timeValue .value {
+  color: #00fff7;
+  margin-left: 0.5em;
+}
+
+.cardContainer .cardContent .timeValue .time {
+  color: #8bacda;
+  margin-left: 0.5em;
+}
+
+.cardContainer .cardCreator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.cardContainer .cardCreator .avatar {
+  width: 25px;
+  border: 1px solid white;
+  border-radius: 100px;
+  margin-right: 1em;
+}
+
+.cardContainer .cardCreator .author {
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  cursor: pointer;
+  color: white;
+}
+
+.cardContainer .cardCreator .author:hover {
+  color: #00fff7;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
