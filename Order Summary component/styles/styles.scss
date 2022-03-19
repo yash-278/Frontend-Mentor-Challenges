@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+  background: url("../images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+}
+
+.cardContainer {
+  max-width: 400px;
+  border-radius: 25px;
+  position: relative;
+  padding-bottom: 1em;
+  margin: auto;
+  transform: translateY(-50%);
+  top: 50%;
+  background-color: #fff;
+  .imgContainer {
+    position: relative;
+    .mainImg {
+      object-fit: fill;
+      height: 200px;
+      width: 100%;
+      border-radius: 25px 25px 0 0;
+    }
+  }
+
+  .cardContent {
+    font-family: "Red Hat Display";
+    text-align: center;
+    padding: 0 3em;
+
+    h1 {
+      font-weight: 900;
+      color: rgb(38, 38, 38);
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .pricingCard {
+      margin-bottom: 1em;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 10px;
+      display: flex;
+      padding: 1em;
+      align-items: center;
+      .contentPricing {
+        text-align: left;
+        margin: 0 1em;
+        font-weight: 600;
+        color: hsl(224, 23%, 55%);
+        strong {
+          color: black;
+        }
+      }
+      .changeButton {
+        cursor: pointer;
+        color: hsl(245, 75%, 52%);
+        background-color: transparent;
+        font-weight: 700;
+        &:hover {
+          text-decoration: none;
+          color: hsl(245, 81%, 69%);
+        }
+      }
+    }
+  }
+
+  .paymentButton {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 1em 2em;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 700;
+    font-family: "Red Hat Display";
+    transition: ease-in-out;
+    transition-duration: 200ms;
+    letter-spacing: 1px;
+    margin: 1em 0;
+    -webkit-box-shadow: 0px 23px 39px -17px rgba(123, 112, 240, 0.79);
+    box-shadow: 0px 23px 39px -17px rgba(123, 112, 240, 0.79);
+    &:hover {
+      background-color: hsl(245, 81%, 69%);
+    }
+  }
+
+  .cancelButton {
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    padding: 1em 2em;
+    font-family: "Red Hat Display";
+    border-radius: 10px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    width: 100%;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

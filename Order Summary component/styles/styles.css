@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Red Hat Display";
+  background: url("../images/pattern-background-desktop.svg");
+  background-color: #e0e8ff;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+}
+
+.cardContainer {
+  max-width: 400px;
+  border-radius: 25px;
+  position: relative;
+  padding-bottom: 1em;
+  margin: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  background-color: #fff;
+}
+
+.cardContainer .imgContainer {
+  position: relative;
+}
+
+.cardContainer .imgContainer .mainImg {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 200px;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+.cardContainer .cardContent {
+  font-family: "Red Hat Display";
+  text-align: center;
+  padding: 0 3em;
+}
+
+.cardContainer .cardContent h1 {
+  font-weight: 900;
+  color: #262626;
+  font-size: 2rem;
+}
+
+.cardContainer .cardContent p {
+  font-size: 1rem;
+  color: #7280a7;
+}
+
+.cardContainer .cardContent .pricingCard {
+  margin-bottom: 1em;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardContainer .cardContent .pricingCard .contentPricing {
+  text-align: left;
+  margin: 0 1em;
+  font-weight: 600;
+  color: #7280a7;
+}
+
+.cardContainer .cardContent .pricingCard .contentPricing strong {
+  color: black;
+}
+
+.cardContainer .cardContent .pricingCard .changeButton {
+  cursor: pointer;
+  color: #3829e0;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.cardContainer .cardContent .pricingCard .changeButton:hover {
+  text-decoration: none;
+  color: #7b70f0;
+}
+
+.cardContainer .paymentButton {
+  background-color: #3829e0;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  padding: 1em 2em;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 700;
+  font-family: "Red Hat Display";
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  letter-spacing: 1px;
+  margin: 1em 0;
+  -webkit-box-shadow: 0px 23px 39px -17px rgba(123, 112, 240, 0.79);
+  box-shadow: 0px 23px 39px -17px rgba(123, 112, 240, 0.79);
+}
+
+.cardContainer .paymentButton:hover {
+  background-color: #7b70f0;
+}
+
+.cardContainer .cancelButton {
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  color: #7280a7;
+  cursor: pointer;
+  padding: 1em 2em;
+  font-family: "Red Hat Display";
+  border-radius: 10px;
+  background-color: transparent;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.cardContainer .cancelButton:hover {
+  color: black;
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
