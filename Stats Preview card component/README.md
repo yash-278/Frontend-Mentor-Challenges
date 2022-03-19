@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/yash-278/Frontend-Mentor-Challenges/tree/main/Stats%20Preview%20card%20component)
+- Live Site URL: [Live Demo](https://yash-278.github.io/Frontend-Mentor-Challenges/Stats%20Preview%20card%20component/index.html)
 
 ### Built with
 
