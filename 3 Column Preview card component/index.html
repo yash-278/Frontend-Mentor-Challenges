@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-transparentWhite sm:px-28 lg:px-0">
+    <main
+      class="mainContainer my-10 mx-auto flex flex-col items-center px-4 lg:my-0 lg:h-screen lg:max-w-5xl lg:flex-row lg:px-10"
+    >
+      <div
+        class="cardContainer flex max-w-md flex-col gap-7 rounded-t-lg bg-brightOrange p-10 sm:max-w-2xl lg:h-[500px] lg:rounded-none lg:rounded-l-lg"
+      >
+        <div class="icon"><img src="./images/icon-sedans.svg" alt="" aria-hidden="true" /></div>
+        <h1 class="title font-shoulders text-4xl font-bold text-veryLightGray">SEDANS</h1>
+        <p class="content mb-6 grow font-lexend font-normal text-transparentWhite">
+          Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the
+          city or on your next road trip.
+        </p>
+        <a
+          href="#"
+          class="button max-w-fit rounded-full border-2 border-veryLightGray bg-veryLightGray px-8 py-3 font-lexend font-normal text-brightOrange transition-colors hover:bg-transparent hover:text-transparentWhite"
+        >
+          Learn More
+        </a>
+      </div>
+      <div
+        class="cardContainer flex max-w-md flex-col gap-7 bg-darkCyan p-10 sm:max-w-2xl lg:h-[500px]"
+      >
+        <div class="icon"><img src="./images/icon-suvs.svg" alt="" aria-hidden="true" /></div>
+        <h1 class="title font-shoulders text-4xl font-bold text-veryLightGray">SUVS</h1>
+        <p class="content mb-6 grow font-lexend font-normal text-transparentWhite">
+          Take an SUV for its spacious interior, power, and versatility. Perfect for your next
+          family vacation and off-road adventures.
+        </p>
+        <a
+          href="#"
+          class="button max-w-fit rounded-full border-2 border-veryLightGray bg-veryLightGray px-8 py-3 font-lexend font-normal text-darkCyan transition-colors hover:bg-transparent hover:text-transparentWhite"
+        >
+          Learn More
+        </a>
+      </div>
+      <div
+        class="cardContainer flex max-w-md flex-col gap-7 rounded-b-lg bg-veryDarkCyan p-10 sm:max-w-2xl lg:h-[500px] lg:rounded-none lg:rounded-r-lg"
+      >
+        <div class="icon"><img src="./images/icon-luxury.svg" alt="" aria-hidden="true" /></div>
+        <h1 class="title font-shoulders text-4xl font-bold text-veryLightGray">LUXURY</h1>
+        <p class="content mb-6 grow font-lexend font-normal text-transparentWhite">
+          Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a
+          luxury rental and arrive in style.
+        </p>
+        <a
+          href="#"
+          class="button max-w-fit rounded-full border-2 border-veryLightGray bg-veryLightGray px-8 py-3 font-lexend font-normal text-veryDarkCyan transition-colors hover:bg-transparent hover:text-transparentWhite"
+          >Learn More</a
+        >
+      </div>
+    </main>
+  </body>
+</html>
