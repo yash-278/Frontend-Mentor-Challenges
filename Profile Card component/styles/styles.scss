@@ -80,6 +80,10 @@ body {
 
   .name {
     font-weight: 700;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
     color: hsl(229, 23%, 23%);
   }
   .age {
