@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/yash-278/Frontend-Mentor-Challenges/tree/main/Stats%20Preview%20card%20component)
-- Live Site URL: [Live Demo](https://yash-278.github.io/Frontend-Mentor-Challenges/Stats%20Preview%20card%20component/index.html)
+- Solution URL: [Github Repo](https://github.com/yash-278/Frontend-Mentor-Challenges/tree/main/Single-Price-Grid-Component)
+- Live Site URL: [Live Demo](https://yash-278.github.io/Frontend-Mentor-Challenges/Single-Price-Grid-Component/index.html)
 
 ## My process
 
