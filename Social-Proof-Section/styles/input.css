@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top -1300px left 0px, bottom -1100px right 0px;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .testimonial {
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top -300px left -200px, bottom -100px right 0px;
+    background-size: contain;
+  }
+}
