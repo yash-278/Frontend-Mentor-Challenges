@@ -519,6 +519,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.h-min{
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
 .w-full{
   width: 100%;
 }
@@ -529,10 +535,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-md{
   max-width: 28rem;
-}
-
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col{
@@ -752,6 +754,10 @@ body {
     height: 100vh;
   }
 
+  .md\:h-full{
+    height: 100%;
+  }
+
   .md\:w-full{
     width: 100%;
   }
@@ -770,6 +776,10 @@ body {
 
   .md\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .md\:content-center{
+    align-content: center;
   }
 
   .md\:justify-evenly{
