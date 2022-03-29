@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Frontend Mentor | Single Price Grid Component</title>
+  </head>
+  <body class="bg-lightGray font-karla md:h-screen">
+    <main class="relative mx-auto my-10 h-full max-w-xs rounded-md md:my-0 md:h-full md:max-w-2xl">
+      <div class="shadow-2xl md:absolute md:top-1/2 md:grid md:-translate-y-1/2 md:grid-cols-2">
+        <!-- Join Community -->
+        <div class="rounded-t-md bg-white p-7 md:col-span-2 md:p-10">
+          <h1 class="mb-5 text-xl font-bold text-cyan md:text-2xl">Join our community</h1>
+          <p class="mb-5 text-base font-bold text-brightYellow md:mb-3 md:text-xl">
+            30-day, hassle-free money back guarantee
+          </p>
+          <p class="text-sm leading-loose text-grayishBlue md:text-base">
+            Gain access to our full library of tutorials along with expert code reviews. Perfect for
+            any developers who are serious about honing their skills.
+          </p>
+        </div>
+
+        <!-- Subscription -->
+        <div class="bg-cyan p-7 md:rounded-bl-md md:p-10">
+          <h2 class="mb-3 text-lg font-bold text-white">Monthly Subscription</h2>
+          <p class="mb-2 text-base text-slate-300">
+            <span class="font-blid text-3xl text-white">&dollar;29 </span> per month
+          </p>
+          <p class="mb-7 text-slate-100">Full access for less than &dollar;1 a day</p>
+          <button
+            href="#"
+            class="w-full rounded-md bg-brightYellow py-3 font-bold text-white shadow-xl"
+          >
+            Sign Up
+          </button>
+        </div>
+
+        <!-- Why US -->
+        <div
+          class="rounded-b-md bg-cyan bg-opacity-70 p-7 md:rounded-none md:rounded-br-md md:p-10"
+        >
+          <h2 class="mb-3 text-lg font-bold text-white">Why Us</h2>
+          <ol class="list-none text-sm text-slate-200">
+            <li>Tutorials by industry experts</li>
+            <li>Peer &amp; expert code review</li>
+            <li>Coding exercises</li>
+            <li>Access to our GitHub repos</li>
+            <li>Community forum</li>
+            <li>Flashcard decks</li>
+            <li>New videos every week</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
