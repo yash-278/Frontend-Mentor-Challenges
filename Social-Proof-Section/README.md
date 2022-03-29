@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/yash-278/Frontend-Mentor-Challenges/tree/main/Social-Proof-Section)
+- Live Site URL: [Live Demo](https://yash-278.github.io/Frontend-Mentor-Challenges/Social-Proof-Section/index.html)
 
 ## My process
 
