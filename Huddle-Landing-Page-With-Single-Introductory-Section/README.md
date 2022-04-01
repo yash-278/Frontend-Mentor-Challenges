@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/yash-278/Frontend-Mentor-Challenges/tree/main/Social-Proof-Section)
-- Live Site URL: [Live Demo](https://yash-278.github.io/Frontend-Mentor-Challenges/Social-Proof-Section/index.html)
+- Solution URL: [Github Repo](https://github.com/yash-278/Frontend-Mentor-Challenges/tree/main/Huddle-Landing-Page-With-Single-Introductory-Section)
+- Live Site URL: [Live Demo](https://yash-278.github.io/Frontend-Mentor-Challenges/Huddle-Landing-Page-With-Single-Introductory-Section/index.html)
 
 ## My process
 
