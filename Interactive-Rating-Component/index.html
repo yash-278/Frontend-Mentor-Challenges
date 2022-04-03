@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Interactive Rating Component | Yash Kadam</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+  </head>
+  <body class="bg-VeryDarkBlue font-overpass text-White">
+    <main class="flex h-screen items-center justify-center">
+      <!-- Rating state start -->
+      <div
+        class="selectRatingPage max-w-[22rem] rounded-3xl bg-DarkBlue bg-gradient-to-t from-[#171E28] to-[#212830] p-9 transition-opacity md:max-w-[25rem]"
+      >
+        <img src="./images/icon-star.svg" alt="" class="rounded-full bg-[#262F38] p-3" />
+        <h1 class="mb-3 mt-7 text-2xl font-bold">How did we do?</h1>
+        <p class="mb-7 text-[0.85rem] text-MediumGrey">
+          Please let us know how we did with your support request. All feedback is appreciated to
+          help us improve our offering!
+        </p>
+        <div class="mb-6 flex justify-between">
+          <div
+            class="1 ratingNumber bg-[#262F38] text-base text-MediumGrey transition-colors duration-300"
+            onclick="setRating()"
+          >
+            1
+          </div>
+          <div
+            class="2 ratingNumber bg-[#262F38] text-base text-MediumGrey transition-colors duration-300"
+            onclick="setRating()"
+          >
+            2
+          </div>
+          <div
+            class="3 ratingNumber bg-[#262F38] text-base text-MediumGrey transition-colors duration-300"
+            onclick="setRating()"
+          >
+            3
+          </div>
+          <div
+            class="4 ratingNumber bg-[#262F38] text-base text-MediumGrey transition-colors duration-300"
+            onclick="setRating()"
+          >
+            4
+          </div>
+          <div
+            class="5 ratingNumber bg-[#262F38] text-base text-MediumGrey transition-colors duration-300"
+            onclick="setRating()"
+          >
+            5
+          </div>
+        </div>
+
+        <button
+          class="block w-full rounded-full bg-Orange pt-3 pb-2 text-sm font-bold tracking-widest text-white transition-colors duration-300 hover:bg-White hover:text-Orange"
+          onclick="toggleButton()"
+        >
+          SUBMIT
+        </button>
+      </div>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+
+      <div
+        class="showRatingPage hidden max-w-[22rem] rounded-3xl bg-DarkBlue bg-gradient-to-t from-[#171E28] to-[#212830] p-9 transition-opacity md:max-w-[25rem]"
+      >
+        <ion-icon
+          name="chevron-back-outline"
+          class="absolute cursor-pointer rounded-full bg-[#262F38] p-3"
+          onclick="toggleButton()"
+        ></ion-icon>
+        <img src="./images/illustration-thank-you.svg" class="mx-auto w-36" alt="" />
+
+        <div
+          class="mx-auto mt-7 w-fit rounded-full bg-[#262F38] px-4 py-1 pt-2 text-sm text-Orange"
+        >
+          You selected <span class="confirmedRating"></span> out of 5
+        </div>
+        <h1 class="mb-3 mt-7 text-center text-2xl font-bold">Thank you!</h1>
+        <p class="mb-[1.2rem] text-center text-[0.85rem] text-MediumGrey">
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t
+          hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+    <!-- Thank you state end -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
