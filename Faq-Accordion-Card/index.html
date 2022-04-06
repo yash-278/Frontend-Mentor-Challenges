@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link href="./styles/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-t from-SoftBlue to-SoftViolet bg-no-repeat font-kumbh md:flex md:items-center md:justify-center"
+  >
+    <main
+      class="relative mx-auto mt-36 mb-10 max-w-xs rounded-3xl bg-white drop-shadow-2xl md:m-0 md:mt-0 md:flex md:max-w-[60rem] md:gap-10"
+    >
+      <div class="relative hidden md:block md:w-1/2">
+        <div class="relative h-full w-full overflow-hidden">
+          <img
+            class="absolute top-1/3 h-[900px] max-h-[900px] w-[900px] -translate-y-1/2 overflow-clip object-cover object-right"
+            src="./images/bg-pattern-desktop.svg"
+            alt=""
+          />
+          <img
+            class="absolute right-0 top-1/2 h-full max-h-[25rem] w-full -translate-y-1/2 object-cover object-right"
+            src="./images/illustration-woman-online-desktop.svg"
+            alt=""
+          />
+        </div>
+        <img
+          class="absolute top-[65%] -left-24 -translate-y-2/3 overflow-visible"
+          src="./images/illustration-box-desktop.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="./images/illustration-woman-online-mobile.svg"
+          alt=""
+          class="absolute left-1/2 w-60 -translate-y-28 -translate-x-1/2 md:hidden"
+        />
+        <img
+          src="./images/bg-pattern-mobile.svg"
+          alt=""
+          class="relative left-1/2 -translate-x-1/2 md:hidden"
+        />
+      </div>
+      <div class="py-8 px-6 transition-all md:w-1/2 md:py-20 md:pr-20">
+        <h1 class="text-center text-3xl font-bold md:text-left">FAQ</h1>
+
+        <div class="my-5 text-sm">
+          <ul class="m-0 list-none p-0">
+            <li class="group relative m-0 py-2">
+              <input class="cb" onchange="cbChange(this)" type="checkbox" checked />
+              <i class="absolute right-0 mt-4 -translate-x-2"></i>
+              <h2 class="font-bold transition-colors group-hover:text-SoftRed">
+                How many team members can I invite?
+              </h2>
+              <p
+                class="relative z-10 mt-3 max-h-96 translate-x-0 translate-y-0 overflow-hidden opacity-100"
+              >
+                You can invite up to 2 additional users on the Free plan. There is no limit on team
+                members for the Premium plan.
+              </p>
+              <hr class="mt-4" />
+            </li>
+            <li class="group relative m-0 py-2">
+              <input class="cb" onchange="cbChange(this)" type="checkbox" />
+              <i class="absolute right-0 mt-4 -translate-x-2"></i>
+              <h2 class="font-bold transition-colors group-hover:text-SoftRed">
+                What is the maximum upload size ?
+              </h2>
+              <p
+                class="relative z-10 mt-3 max-h-96 translate-x-0 translate-y-0 overflow-hidden opacity-100"
+              >
+                No more than 2GB. All files in your account must fit your alloted storage space.
+              </p>
+              <hr class="mt-4" />
+            </li>
+
+            <li class="group relative m-0 py-2">
+              <input class="cb" onchange="cbChange(this)" type="checkbox" checked />
+              <i class="absolute right-0 mt-4 -translate-x-2"></i>
+              <h2 class="font-bold transition-colors group-hover:text-SoftRed">
+                How do I reset my password?
+              </h2>
+              <p
+                class="relative z-10 mt-3 max-h-96 translate-x-0 translate-y-0 overflow-hidden opacity-100"
+              >
+                Click “Forgot password” from the login page or “Change password” from your profile
+                page. A reset link will be emailed to you.
+              </p>
+              <hr class="mt-4" />
+            </li>
+
+            <li class="group relative m-0 py-2">
+              <input class="cb" onchange="cbChange(this)" type="checkbox" checked />
+              <i class="absolute right-0 mt-4 -translate-x-2"></i>
+              <h2 class="font-bold transition-colors group-hover:text-SoftRed">
+                Can I cancel my subscription?
+              </h2>
+              <p
+                class="relative z-10 mt-3 max-h-96 translate-x-0 translate-y-0 overflow-hidden opacity-100"
+              >
+                Yes! Send us a message and we’ll process your request no questions asked.
+              </p>
+              <hr class="mt-4" />
+            </li>
+
+            <li class="group relative m-0 py-2">
+              <input class="cb" onchange="cbChange(this)" type="checkbox" checked />
+              <i class="absolute right-0 mt-4 -translate-x-2"></i>
+              <h2 class="font-bold transition-colors group-hover:text-SoftRed">
+                Do you provide additional support?
+              </h2>
+              <p
+                class="relative z-10 mt-3 max-h-96 translate-x-0 translate-y-0 overflow-hidden opacity-100"
+              >
+                Chat and email support is available 24/7. Phone lines are open during normal
+                business hours.
+              </p>
+              <hr class="mt-4" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
