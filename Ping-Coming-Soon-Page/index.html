@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="./styles/output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body class="min-h-screen font-libre">
+    <main class="mx-10 text-center">
+      <div class="mt-28 flex flex-col items-center justify-center md:mt-[5.5rem]">
+        <img src="./images/logo.svg" alt="" class="mb-8 max-w-[70px] md:max-w-[100px]" />
+
+        <h1 class="my-5 text-3xl text-Gray md:text-5xl">
+          We are launching <strong class="text-black">soon!</strong>
+        </h1>
+        <p class="text-base font-light md:text-xl">Subscribe and get notified</p>
+
+        <div class="mb-20 w-full md:py-4">
+          <form name="emailForm">
+            <input
+              type="text"
+              placeholder="Your email address"
+              class="inputBox mt-10 mb-3 w-full max-w-sm rounded-full border-2 border-Blue px-8 py-3 outline-none md:mb-0 md:max-w-md"
+              name="email"
+            />
+
+            <input
+              name="submit"
+              type="submit"
+              value="Notify Me"
+              class="w-full max-w-sm cursor-pointer rounded-full bg-Blue py-3 font-semibold tracking-wide text-white bg-blend-darken shadow-lg shadow-PaleBlue transition-colors hover:bg-PaleBlue md:mx-5 md:max-w-[200px]"
+              onclick="return ValidateEmail(document.emailForm.email)"
+            />
+            <p
+              class="emailSuccess mx-auto my-2 hidden max-w-2xl px-6 text-xs font-semibold italic text-green-500 md:text-left"
+            >
+              You'll be notified after our launch.
+            </p>
+            <p
+              class="emailNone mx-auto my-2 hidden max-w-2xl px-6 text-left text-xs font-semibold italic text-LightRed"
+            >
+              Whoops! It looks like you forgot to add your email
+            </p>
+            <p
+              class="emailError mx-auto my-2 hidden max-w-2xl px-6 text-left text-xs font-semibold italic text-LightRed"
+            >
+              Please provide a valid email address
+            </p>
+          </form>
+        </div>
+
+        <img src="./images/illustration-dashboard.png" class="md:max-w-2xl" alt="" />
+      </div>
+    </main>
+    <footer class="mt-32 mb-12 text-center">
+      <div class="my-7 text-Blue md:my-5">
+        <ion-icon
+          class="text-md mx-2 cursor-pointer rounded-full border-2 border-solid p-2 transition-colors hover:bg-Blue hover:text-white"
+          name="logo-facebook"
+          aria-label="Social Page Facebook"
+        ></ion-icon>
+        <ion-icon
+          class="text-md mx-2 cursor-pointer rounded-full border-2 border-solid p-2 transition-colors hover:bg-Blue hover:text-white"
+          name="logo-twitter"
+          aria-label="Social Page Twitter"
+        ></ion-icon>
+        <ion-icon
+          class="text-md mx-2 cursor-pointer rounded-full border-2 border-solid p-2 transition-colors hover:bg-Blue hover:text-white"
+          name="logo-instagram"
+          aria-label="Social Page Instagram"
+        ></ion-icon>
+      </div>
+      <p class="text-sm text-Gray md:text-xs">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
