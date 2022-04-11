@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-LinearWhite to-LinearVeryLightPink font-josefin">
+    <main class="flex min-h-screen">
+      <div class="bg-cover bg-no-repeat lg:w-3/5 lg:bg-desktopBg lg:px-40 lg:py-16">
+        <img src="./images/logo.svg" class="w-40 p-8 lg:w-40 lg:p-0" alt="" />
+
+        <div class="h-[15.5rem] w-full bg-heroMobile bg-cover bg-top bg-no-repeat lg:hidden"></div>
+        <h1
+          class="mt-16 mb-5 px-5 text-center text-[2.5rem] font-semibold uppercase leading-none tracking-[0.2em] text-DarkGrayishRed lg:mt-32 lg:p-0 lg:text-left lg:text-7xl"
+        >
+          <strong class="font-light text-DesaturatedRed">We're</strong> <br />
+          coming soon
+        </h1>
+        <p
+          class="px-10 text-center text-sm text-DesaturatedRed lg:max-w-md lg:px-0 lg:text-left lg:text-base lg:leading-relaxed"
+        >
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email
+          below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <div class="relative mx-auto mt-10 mb-24 w-full max-w-xs lg:mx-0 lg:max-w-md">
+          <form name="emailForm">
+            <div class="relative flex w-full">
+              <input
+                type="text"
+                name="email"
+                placeholder="Email Address"
+                class="inputBox w-full rounded-full bg-transparent px-6 py-3 align-bottom text-sm outline outline-1 outline-DesaturatedRed placeholder:text-DesaturatedRed lg:py-4 lg:placeholder:text-base"
+              />
+              <button
+                class="absolute right-0 rounded-full bg-gradient-to-br from-LinearSlightPink to-LinearPink px-6 py-3 shadow-lg shadow-DesaturatedRed/40 transition-all hover:scale-110 hover:from-LinearSlightPink hover:to-LinearSlightPink hover:shadow-xl lg:py-4 lg:px-10"
+                onclick="return ValidateEmail(document.emailForm.email)"
+              >
+                <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+          </form>
+          <p
+            class="emailSuccess absolute mx-auto my-2 hidden max-w-2xl px-6 text-left text-xs font-semibold italic text-green-500"
+          >
+            You'll be notified as soon as we go live.
+          </p>
+          <p
+            class="emailNone absolute mx-auto my-2 hidden max-w-2xl px-6 text-left text-xs font-semibold italic text-rose-500"
+          >
+            Whoops! It looks like you forgot to add your email
+          </p>
+          <p
+            class="emailError absolute mx-auto my-2 hidden max-w-2xl px-6 text-left text-xs font-semibold italic text-rose-500"
+          >
+            Please provide a valid email address
+          </p>
+        </div>
+      </div>
+      <div class="hidden w-2/5 bg-heroDesktop bg-cover bg-top bg-no-repeat lg:block"></div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
