@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadowDiv {
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.claimDiv {
+  -webkit-box-shadow: 0px 8px 0px 0px hsla(154, 59%, 51%, 1);
+  box-shadow: 0px 4px 0px 0px rgb(20, 172, 106);
+}

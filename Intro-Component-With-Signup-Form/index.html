@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body class="min-h-screen bg-Red bg-mobile font-poppins md:bg-desktop md:py-5">
+    <!-- ============ Main Container =================== -->
+    <main
+      class="mt-[5.6rem] mb-20 min-h-screen px-6 md:my-0 md:mx-auto md:flex md:max-w-6xl md:items-center md:justify-center md:gap-x-16"
+    >
+      <!-- ============ Title Text      ================== -->
+      <div class="md:w-1/2">
+        <h1
+          class="my-6 text-center text-[1.7rem] font-semibold leading-9 text-white md:text-left md:text-5xl md:leading-none"
+        >
+          Learn to code by watching others
+        </h1>
+        <p class="mb-16 px-2 text-center leading-[1.6rem] text-white md:text-left">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is
+          great, but understanding how developers think is invaluable.
+        </p>
+      </div>
+
+      <div class="md:w-1/2">
+        <!-- ========== Try it Free Card ================== -->
+        <div class="shadowDiv rounded-lg bg-Blue py-4 px-3">
+          <p class="text-center text-base font-normal leading-7 text-GrayishBlue">
+            <strong class="font-semibold text-white"> Try it free 7 days </strong> then
+            <br class="md:hidden" />
+            $20/mo. thereafter
+          </p>
+        </div>
+
+        <!-- ========== Form Card ====================== -->
+        <div class="shadowDiv relative my-7 rounded-lg bg-white p-6 transition-all md:p-10">
+          <form action="">
+            <img src="./images/icon-error.svg" class="absolute right-16 my-4 hidden" alt="" />
+            <input
+              type="text"
+              class="inputBox w-full rounded-md border-2 py-4 px-5 text-sm font-bold text-DarkBlue focus:outline-GrayishBlue"
+              placeholder="First Name"
+              name="fName"
+              id="fName"
+            />
+            <p class="mt-2 hidden text-right text-xs font-medium italic text-red-500">
+              First Name cannot be empty
+            </p>
+
+            <img src="./images/icon-error.svg" class="absolute right-16 my-8 hidden" alt="" />
+            <input
+              type="text"
+              class="inputBox mt-4 w-full rounded-md border-2 py-4 px-5 text-sm font-bold text-DarkBlue focus:outline-GrayishBlue"
+              placeholder="Last Name"
+              name="lName"
+              id="lName"
+            />
+            <p class="mt-2 hidden text-right text-xs font-medium italic text-red-500">
+              Last Name cannot be empty
+            </p>
+
+            <img src="./images/icon-error.svg" class="absolute right-16 my-8 hidden" alt="" />
+            <input
+              type="text"
+              class="inputBox mt-4 w-full rounded-md border-2 py-4 px-5 text-sm font-bold text-DarkBlue focus:outline-GrayishBlue"
+              placeholder="Email Address"
+              name="email"
+              id="email"
+            />
+            <p class="mt-2 hidden text-right text-xs font-medium italic text-red-500">
+              Looks like this is not a email
+            </p>
+
+            <img src="./images/icon-error.svg" class="absolute right-16 my-8 hidden" alt="" />
+            <input
+              type="password"
+              class="inputBox mt-4 w-full rounded-md border-2 py-4 px-5 text-sm font-bold text-DarkBlue focus:outline-GrayishBlue"
+              placeholder="Password"
+              name="password"
+              id="password"
+            />
+            <p class="mt-2 hidden text-right text-xs font-medium italic text-red-500">
+              Password should contain 1 lowercase letter, 1 capital letter,
+              <br class="hidden md:block" />
+              1 number, 1 special character & atleast 12 characters long
+            </p>
+
+            <input
+              type="submit"
+              class="claimDiv mt-4 w-full cursor-pointer rounded-md bg-Green py-4 text-base font-medium tracking-wider text-white transition-colors hover:bg-green-400"
+              name="submit"
+              id="submit"
+              onclick="return checkInputs()"
+            />
+            <p
+              class="mt-3 px-2 text-center text-xs font-semibold leading-5 text-GrayishBlue md:mt-5"
+            >
+              By clicking the button, you are agreeing to our
+              <strong class="cursor-pointer font-semibold text-Red">Terms and Services</strong>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
