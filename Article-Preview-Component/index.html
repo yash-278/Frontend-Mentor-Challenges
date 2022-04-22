@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+  </head>
+  <body class="bg-LightGrayishBlue font-Manrope">
+    <main class="relative flex min-h-screen w-full items-center justify-center">
+      <!-- ============ Card Container  ====================== -->
+      <div class="max-w-xs rounded-lg bg-white shadow-xl lg:flex lg:max-w-3xl">
+        <div
+          class="h-[12.5rem] w-full overflow-hidden rounded-t-lg lg:h-[17rem] lg:w-2/5 lg:rounded-none lg:rounded-l-lg"
+        >
+          <img
+            src="./images/drawers.jpg"
+            class="h-full w-full object-cover lg:object-left"
+            alt=""
+          />
+        </div>
+        <!-- ============ Card Content ============== -->
+        <div class="relative px-8 pt-8 lg:w-3/5 lg:px-10">
+          <h1 class="text-base font-bold text-VeryDarkGrayishBlue lg:text-xl">
+            Shift the overall look and feel by adding these wonderful touches to furniture in your
+            home
+          </h1>
+          <p class="mt-3 text-[0.81rem] leading-5 text-DesaturatedDarkBlue">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare
+            and uninviting. I've got some simple tips to help you make any room feel complete.
+          </p>
+
+          <div
+            class="sharePageDesktop absolute -right-[60px] bottom-20 mt-2 hidden items-center justify-items-stretch rounded-lg bg-VeryDarkGrayishBlue py-4 px-8 shadow-xl"
+          >
+            <p class="text-xs font-medium tracking-[5px] text-GrayishBlue">SHARE</p>
+            <div class="ml-4 flex grow flex-row gap-4">
+              <img src="./images/icon-facebook.svg" alt="" />
+              <img src="./images/icon-twitter.svg" alt="" />
+              <img src="./images/icon-pinterest.svg" alt="" />
+            </div>
+            <div class="bottom-arrow shadow-xl"></div>
+          </div>
+          <!-- ========= Author Section ============== -->
+          <div class="author mt-2 flex items-center justify-items-stretch py-3 lg:flex lg:pb-0">
+            <img src="./images/avatar-michelle.jpg" class="h-10 rounded-full" alt="" />
+            <div class="ml-4 grow">
+              <p class="text-sm font-bold text-VeryDarkGrayishBlue">Michelle Appleton</p>
+              <p class="text-xs text-GrayishBlue">28 Jun 2020</p>
+            </div>
+            <div class="rounded-full bg-LightGrayishBlue p-2 lg:hidden" onclick="shareMobile()">
+              <img class="h-4 w-4 pb-[2px]" src="./images/icon-share.svg" alt="" />
+            </div>
+
+            <div
+              class="peer hidden rounded-full bg-LightGrayishBlue p-2 lg:block"
+              onclick="shareDesktop()"
+            >
+              <img class="h-4 w-4 pb-[2px]" src="./images/icon-share.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ Share Page Mobile =============== -->
+        <div
+          class="sharePage mt-2 flex hidden items-center justify-items-stretch rounded-b-lg bg-VeryDarkGrayishBlue py-4 px-8 lg:hidden"
+        >
+          <p class="text-xs font-medium tracking-[5px] text-GrayishBlue">SHARE</p>
+          <div class="ml-4 flex grow flex-row gap-4">
+            <img src="./images/icon-facebook.svg" alt="" />
+            <img src="./images/icon-twitter.svg" alt="" />
+            <img src="./images/icon-pinterest.svg" alt="" />
+          </div>
+          <div class="rounded-full bg-DesaturatedDarkBlue p-2" onclick="shareMobile()">
+            <img class="h-4 w-4 pb-[2px]" src="./images/icon-share2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

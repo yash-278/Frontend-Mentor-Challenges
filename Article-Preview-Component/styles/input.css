@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bottom-arrow {
+  border-bottom: 5px solid #48556a;
+}
+
+.bottom-arrow:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #48556a;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
