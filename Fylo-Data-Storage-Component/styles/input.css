@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main {
+  background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottom-arrow:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-top: 30px solid #fff;
+  border-left: 30px solid transparent;
+  border-right: 0px solid transparent;
+}
+
+@media (min-width: 900px) {
+  .main {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("../images/bg-desktop.png");
+    background-size: contain;
+    background-position: bottom;
+  }
+}

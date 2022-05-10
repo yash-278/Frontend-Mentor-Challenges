@@ -15,7 +15,78 @@
     <link rel="stylesheet" href="./styles/output.css" />
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
-  <body>
-    You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+  <body class="font-raleway">
+    <main
+      class="main flex min-h-screen flex-col items-center justify-center md:flex-row lg:min-h-[900px]"
+    >
+      <div class="flex flex-col lg:flex-row lg:gap-8">
+        <!-- ? Logo Section -->
+        <div
+          class="mb-5 min-w-[320px] rounded-xl rounded-tr-[100px] bg-DarkBlue p-10 shadow-2xl lg:mb-0 lg:w-[360px]"
+        >
+          <img src="./images/logo.svg" class="mb-8" alt="" />
+
+          <!-- ? Interactable Icons -->
+          <div class="flex gap-4">
+            <div
+              class="flex items-center justify-center rounded-xl bg-VeryDarkBlue p-3 transition-colors hover:bg-violet-900"
+            >
+              <img src="./images/icon-document.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-center rounded-xl bg-VeryDarkBlue p-3 transition-colors hover:bg-violet-900"
+            >
+              <img src="./images/icon-folder.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-center rounded-xl bg-VeryDarkBlue p-3 transition-colors hover:bg-violet-900"
+            >
+              <img src="./images/icon-upload.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ? Data Used Section -->
+        <div
+          class="relative w-[320px] rounded-xl bg-DarkBlue p-8 pb-10 text-center text-PaleBlue drop-shadow-2xl lg:flex lg:h-40 lg:w-[600px] lg:flex-col lg:justify-center lg:self-end lg:px-10 lg:pb-5 lg:text-left"
+        >
+          <p class="mb-3 text-sm lg:text-base">
+            You’ve used <span class="font-bold">815 GB</span> of your storage
+          </p>
+
+          <!-- ? Progress Bar -->
+          <div class="relative h-4 w-full rounded-full bg-VeryDarkBlue">
+            <div
+              class="absolute left-1 top-1/2 h-3 -translate-y-1/2 rounded-full bg-gradient-to-r from-GradLeft to-GradRight"
+              style="width: 75%"
+            >
+              <div
+                class="absolute top-1/2 right-[2px] h-2 w-2 -translate-y-1/2 rounded-full bg-white"
+              ></div>
+            </div>
+          </div>
+          <div class="my-2 flex justify-between text-xs font-bold">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+
+          <!-- ? Mobile Data Left Popup -->
+          <div
+            class="absolute -bottom-9 left-1/2 w-40 -translate-x-1/2 rounded-md bg-white py-4 px-6 align-middle font-bold text-VeryDarkBlue lg:hidden"
+          >
+            <span class="text-4xl">185</span>
+            <span class="text-xs text-GrayishBlue">GB LEFT</span>
+          </div>
+          <!-- ? Desktop Data Left Popup -->
+          <div
+            class="absolute -top-12 right-10 hidden w-40 rounded-md bg-white py-4 px-6 font-bold text-VeryDarkBlue lg:block"
+          >
+            <span class="text-4xl">185</span>
+            <span class="text-xs text-GrayishBlue">GB LEFT</span>
+            <div class="bottom-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
